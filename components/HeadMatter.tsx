@@ -19,7 +19,7 @@ const HeadMatter: React.FC<Props> = props => {
   return (
     <Head>
       <title>{props.title} · Ilusa</title>
-      <link rel="shortcut icon" href="/favicon.png"></link>
+      {/*<link rel="shortcut icon" href="/favicon.png"></link>*/}
       <link rel="canonical" href={url} />
       <meta
         property="description"
