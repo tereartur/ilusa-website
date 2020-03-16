@@ -6,9 +6,6 @@
     "dev": "next",
     "prettier": "npx prettier --write '{components,pages}/**/*.js'"
   },
-  "engines": {
-    "node": "10.x"
-  },
   "dependencies": {
     "@mdx-js/loader": "^1.5.3",
     "@next/mdx": "^9.1.7",
