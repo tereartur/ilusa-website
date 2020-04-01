@@ -7,7 +7,7 @@ const Container = styled.div`
     height: 100vh;
     flex-direction: column;
 
-    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+    @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         flex-direction: row;
     }
 `;
@@ -16,12 +16,14 @@ const Left = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    padding: 3rem;
+    padding: 2rem;
 
-    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+    @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         width: 40%;
+        height: 100vh;
+        padding: 3rem;
     }
 `;
 
@@ -29,7 +31,7 @@ const Right = styled.div`
     width: 100%;
     overflow-y: none;
 
-    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+    @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         width: 60%;
         overflow-y: auto;
     }
@@ -38,7 +40,8 @@ const Right = styled.div`
 const Flex = styled.div`
     display: flex;
     align-items: flex-end;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 1.5rem;
 
     @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
         flex-direction: column-reverse;
@@ -119,6 +122,8 @@ const MailLink = styled.a`
     border-radius: 0.5rem;
 
     -webkit-appearance: button;
+    
+    text-decoration: none;
 `;
 
 const Mascot = styled.div`
@@ -131,17 +136,21 @@ const Mascot = styled.div`
     border-top-right-radius: 9999px;
     border-bottom-right-radius: 9999px;
 
-    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+    @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         margin-right: -8rem;
         padding: 5rem;
     }
 `;
 
 const ProductContainer = styled.div`
-    padding: 3rem;
+    padding: 2rem;
     max-width: 72rem;
 
     background-color: ${(props) => props.theme.colors[props.bg]};
+    
+    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+        padding: 3rem;
+    }
 `;
 
 const ProductContent = styled.div`
@@ -157,16 +166,24 @@ const ProductImage = styled.img`
 `;
 
 const ProductTitleContainer = styled.div`
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    
+    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+        margin-top: 2.5rem;
+    }
 `;
 
 const ProductTitle = styled.h2`
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: -0.025em;
     line-height: 1;
     font-weight: 800;
+    
+    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+        font-size: 1.5rem;
+    }
 `;
 
 const HomePage: React.FC<any> = () => {
