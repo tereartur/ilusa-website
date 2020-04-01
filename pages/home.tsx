@@ -39,7 +39,6 @@ const Right = styled.div`
 
 const Flex = styled.div`
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
     margin-top: 1.5rem;
 
@@ -53,6 +52,7 @@ const Flex = styled.div`
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         flex-direction: row;
+        align-items: flex-end;
     }
 `;
 
