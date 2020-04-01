@@ -121,8 +121,6 @@ const MailLink = styled.a`
     line-height: 1;
     border-radius: 0.5rem;
 
-    -webkit-appearance: button;
-    
     text-decoration: none;
 `;
 
