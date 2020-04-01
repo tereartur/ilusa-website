@@ -154,7 +154,7 @@ const ProductContainer = styled.div`
 `;
 
 const ProductContent = styled.div`
-    max-width: 42rem;
+    max-width: 40rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -238,7 +238,7 @@ const HomePage: React.FC<any> = () => {
                 <Right>
                     <ProductContainer bg="purple-300">
                         <ProductContent>
-                            <ProductImage src="/static/esimene.jpg" />
+                            <ProductImage src="/static/esimene.jpg" alt="Tahke huulevõie südamekujulises karbis" />
                             <ProductTitleContainer>
                                 <ProductTitle>
                                     Tahke huulevõie südamekujulises karbis
@@ -248,7 +248,7 @@ const HomePage: React.FC<any> = () => {
                     </ProductContainer>
                     <ProductContainer bg="pink-300">
                         <ProductContent>
-                            <ProductImage src="/static/vedel.jpg" />
+                            <ProductImage src="/static/vedel.jpg" alt="Vedel huuleläige" />
                             <ProductTitleContainer>
                                 <ProductTitle>Vedel huuleläige</ProductTitle>
                             </ProductTitleContainer>
@@ -256,12 +256,12 @@ const HomePage: React.FC<any> = () => {
                     </ProductContainer>
                     <ProductContainer bg="green-300">
                         <ProductContent>
-                            <ProductImage src="/static/tahke-vaike.jpg" />
+                            <ProductImage src="/static/tahke-vaike.jpg" alt="Tahke huulevõie" />
                         </ProductContent>
                     </ProductContainer>
                     <ProductContainer bg="yellow-300">
                         <ProductContent>
-                            <ProductImage src="/static/tahke-suur.jpg" />
+                            <ProductImage src="/static/tahke-suur.jpg" alt="Tahke suur huulevõie" />
                         </ProductContent>
                     </ProductContainer>
                 </Right>
