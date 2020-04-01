@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
-    height: 100vh;
     flex-direction: column;
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         flex-direction: row;
+        height: 100vh;
     }
 `;
 
