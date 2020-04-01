@@ -29,7 +29,7 @@ const Left = styled.div`
 
 const Right = styled.div`
     width: 100%;
-    overflow-y: none;
+    overflow-y: initial;
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
         width: 60%;
@@ -60,7 +60,7 @@ const ColorHeading = styled.h2`
     line-height: 1;
     font-size: 2rem;
     letter-spacing: -0.025em;
-    font-weight: 800;
+    font-weight: 900;
 
     color: ${(props) =>
         props.color ? props.theme.colors[props.color] : 'black'};
@@ -78,7 +78,7 @@ const HelloHeading = styled.h1`
     font-size: 2rem;
     line-height: 1;
     letter-spacing: -0.025em;
-    font-weight: 800;
+    font-weight: 900;
 
     @media (min-width: ${(props) => props.theme.breakpoints['lg']}) {
         font-size: 3rem;
@@ -179,7 +179,7 @@ const ProductTitle = styled.h2`
     font-size: 1.25rem;
     letter-spacing: -0.025em;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 900;
     
     @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
         font-size: 1.5rem;
