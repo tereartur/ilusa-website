@@ -1,5 +1,10 @@
 {
-  "version": 2,
-  "scope": "unstacked",
-  "builds": [{ "src": "package.json", "use": "@now/next" }]
+    "version": 2,
+    "scope": "unstacked",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@now/next"
+        }
+    ]
 }
