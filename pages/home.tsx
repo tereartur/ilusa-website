@@ -111,6 +111,8 @@ const SubHeading = styled.p`
 const MailLink = styled.a`
     color: ${(props) => props.theme.colors['indigo-600']};
     background-color: ${(props) => props.theme.colors['indigo-100']};
+    
+    display: inline-block;
 
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -118,6 +120,8 @@ const MailLink = styled.a`
     padding-bottom: 0.5rem;
 
     margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    
     line-height: 1;
     border-radius: 0.5rem;
 
