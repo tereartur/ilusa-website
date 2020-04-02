@@ -208,12 +208,11 @@ const HomePage: React.FC<any> = () => {
                     <Flex>
                         <div>
                             <HelloHeading>
-                                Tsau, mina olen <Ilusa>ILUSA</Ilusa>.
+                                Hei, mina olen <Ilusa>ILUSA</Ilusa>.
                             </HelloHeading>
                             <SubHeading>
                                 Olen 9 aastane tüdruk, kellele meeldib teha
-                                teistele neidudele käsitöökosmeetika. Minu
-                                kosmeetika on{' '}
+                                teistele neidudele käsitöökosmeetikat. Kosmeetika on{' '}
                                 <span className="font-bold">
                                     100% looduslik
                                 </span>{' '}
