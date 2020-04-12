@@ -274,7 +274,7 @@ const HomePage: React.FC<any> = () => {
                             />
                             <ProductTitleContainer>
                                 <ProductTitle>Vedel huuleläige</ProductTitle>
-                                <Price>3 EUR</Price>
+                                <Price>2.8 EUR</Price>
                             </ProductTitleContainer>
                             <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Vedel huuleläige">
                                 Telli
@@ -291,7 +291,7 @@ const HomePage: React.FC<any> = () => {
                                 <ProductTitle>
                                     Vedel huulgeläige roosas karbis
                                 </ProductTitle>
-                                <Price>3 EUR</Price>
+                                <Price>2 EUR</Price>
                             </ProductTitleContainer>
                             <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Vedel huulgeläige roosas karbis">
                                 Telli
@@ -308,7 +308,7 @@ const HomePage: React.FC<any> = () => {
                                 <ProductTitle>
                                     Tahke huulgeläige väikses karbis
                                 </ProductTitle>
-                                <Price>1 EUR</Price>
+                                <Price>0.8 EUR</Price>
                             </ProductTitleContainer>
                             <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Tahke huulgeläige väikses karbis">
                                 Telli
