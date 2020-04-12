@@ -21,6 +21,7 @@ const Left = styled.div`
     padding: 2rem;
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
+        position: fixed;
         width: 40%;
         height: 100vh;
         padding: 3rem;
@@ -32,8 +33,8 @@ const Right = styled.div`
     overflow-y: initial;
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
+        margin-left: 40%;
         width: 60%;
-        overflow-y: auto;
     }
 `;
 
@@ -111,7 +112,7 @@ const SubHeading = styled.p`
 const MailLink = styled.a`
     color: ${(props) => props.theme.colors['indigo-600']};
     background-color: ${(props) => props.theme.colors['indigo-100']};
-    
+
     display: inline-block;
 
     padding-left: 0.75rem;
@@ -121,7 +122,7 @@ const MailLink = styled.a`
 
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    
+
     line-height: 1;
     border-radius: 0.5rem;
 
@@ -149,7 +150,7 @@ const ProductContainer = styled.div`
     max-width: 72rem;
 
     background-color: ${(props) => props.theme.colors[props.bg]};
-    
+
     @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
         padding: 3rem;
     }
@@ -171,7 +172,9 @@ const ProductTitleContainer = styled.div`
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
-    
+    display: flex;
+    justify-content: space-between;
+
     @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
         margin-top: 2.5rem;
     }
@@ -181,8 +184,16 @@ const ProductTitle = styled.h2`
     font-size: 1.25rem;
     letter-spacing: -0.025em;
     line-height: 1;
-    font-weight: 900;
-    
+
+    @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
+        font-size: 1.5rem;
+    }
+`;
+
+const Price = styled.div`
+    font-size: 1.25rem;
+    line-height: 1;
+
     @media (min-width: ${(props) => props.theme.breakpoints['md']}) {
         font-size: 1.5rem;
     }
@@ -216,7 +227,8 @@ const HomePage: React.FC<any> = () => {
                             </HelloHeading>
                             <SubHeading>
                                 Olen 9 aastane tüdruk, kellele meeldib teha
-                                teistele neidudele käsitöökosmeetikat. Kosmeetika on{' '}
+                                teistele neidudele käsitöökosmeetikat.
+                                Kosmeetika on{' '}
                                 <span className="font-bold">
                                     100% looduslik
                                 </span>{' '}
@@ -239,30 +251,68 @@ const HomePage: React.FC<any> = () => {
                 <Right>
                     <ProductContainer bg="purple-300">
                         <ProductContent>
-                            <ProductImage src="/static/esimene.jpg" alt="Tahke huulevõie südamekujulises karbis" />
+                            <ProductImage
+                                src="/static/esimene.jpg"
+                                alt="Tahke huulevõie südamekujulises karbis"
+                            />
                             <ProductTitleContainer>
                                 <ProductTitle>
                                     Tahke huulevõie südamekujulises karbis
                                 </ProductTitle>
+                                <Price>3 EUR</Price>
                             </ProductTitleContainer>
+                            <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Tahke huulevõie südamekujulises karbis">
+                                Telli
+                            </MailLink>
                         </ProductContent>
                     </ProductContainer>
                     <ProductContainer bg="pink-300">
                         <ProductContent>
-                            <ProductImage src="/static/vedel.jpg" alt="Vedel huuleläige" />
+                            <ProductImage
+                                src="/static/vedel.jpg"
+                                alt="Vedel huuleläige"
+                            />
                             <ProductTitleContainer>
                                 <ProductTitle>Vedel huuleläige</ProductTitle>
+                                <Price>3 EUR</Price>
                             </ProductTitleContainer>
+                            <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Vedel huuleläige">
+                                Telli
+                            </MailLink>
                         </ProductContent>
                     </ProductContainer>
                     <ProductContainer bg="green-300">
                         <ProductContent>
-                            <ProductImage src="/static/tahke-vaike.jpg" alt="Tahke huulevõie" />
+                            <ProductImage
+                                src="/static/vedel-roosa.jpg"
+                                alt="Vedel huuleläige roosas karbis"
+                            />
+                            <ProductTitleContainer>
+                                <ProductTitle>
+                                    Vedel huulgeläige roosas karbis
+                                </ProductTitle>
+                                <Price>3 EUR</Price>
+                            </ProductTitleContainer>
+                            <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Vedel huulgeläige roosas karbis">
+                                Telli
+                            </MailLink>
                         </ProductContent>
                     </ProductContainer>
                     <ProductContainer bg="yellow-300">
                         <ProductContent>
-                            <ProductImage src="/static/tahke-suur.jpg" alt="Tahke suur huulevõie" />
+                            <ProductImage
+                                src="/static/tahke-vaike-2.jpg"
+                                alt="Tahke huulevõie väikses karbis"
+                            />
+                            <ProductTitleContainer>
+                                <ProductTitle>
+                                    Tahke huulgeläige väikses karbis
+                                </ProductTitle>
+                                <Price>1 EUR</Price>
+                            </ProductTitleContainer>
+                            <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Tahke huulgeläige väikses karbis">
+                                Telli
+                            </MailLink>
                         </ProductContent>
                     </ProductContainer>
                 </Right>
