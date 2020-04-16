@@ -308,7 +308,7 @@ const HomePage: React.FC<any> = () => {
                                 <ProductTitle>
                                     Tahke huulgeläige väikses karbis
                                 </ProductTitle>
-                                <Price>0.8 EUR</Price>
+                                <Price>0.80 EUR</Price>
                             </ProductTitleContainer>
                             <MailLink href="mailto:lisandra@ilusa.ee?subject=Soovin tellida: Tahke huulgeläige väikses karbis">
                                 Telli
