@@ -67,11 +67,11 @@ const ColorHeading = styled.h2`
         props.color ? props.theme.colors[props.color] : 'black'};
 
     @media (min-width: ${(props) => props.theme.breakpoints['lg']}) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 `;
 
@@ -82,11 +82,11 @@ const HelloHeading = styled.h1`
     font-weight: 900;
 
     @media (min-width: ${(props) => props.theme.breakpoints['lg']}) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     @media (min-width: ${(props) => props.theme.breakpoints['xl']}) {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 `;
 
