@@ -1,6 +1,7 @@
 import React from 'react';
 import HeadMatter from 'components/HeadMatter';
 import styled from 'styled-components';
+import Image from 'next/image'
 
 const Container = styled.div`
     display: flex;
@@ -163,7 +164,7 @@ const ProductContent = styled.div`
     margin-right: auto;
 `;
 
-const ProductImage = styled.img`
+const ProductImage = styled(Image)`
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     border-radius: 0.5rem;
 `;
@@ -241,9 +242,11 @@ const HomePage: React.FC<any> = () => {
                             </MailLink>
                         </div>
                         <Mascot>
-                            <img
+                            <Image
                                 src="/static/ilusa-mascot.png"
                                 alt="Ilusa mascot"
+                                width="350"
+                                height="641"
                             />
                         </Mascot>
                     </Flex>
@@ -254,6 +257,8 @@ const HomePage: React.FC<any> = () => {
                             <ProductImage
                                 src="/static/esimene.jpg"
                                 alt="Tahke huulevõie südamekujulises karbis"
+                                width="640"
+                                height="480"
                             />
                             <ProductTitleContainer>
                                 <ProductTitle>
@@ -271,6 +276,8 @@ const HomePage: React.FC<any> = () => {
                             <ProductImage
                                 src="/static/vedel.jpg"
                                 alt="Vedel huuleläige"
+                                width="640"
+                                height="608"
                             />
                             <ProductTitleContainer>
                                 <ProductTitle>Vedel huuleläige</ProductTitle>
@@ -286,6 +293,8 @@ const HomePage: React.FC<any> = () => {
                             <ProductImage
                                 src="/static/vedel-roosa.jpg"
                                 alt="Vedel huuleläige roosas karbis"
+                                width="640"
+                                height="480"
                             />
                             <ProductTitleContainer>
                                 <ProductTitle>
@@ -303,6 +312,8 @@ const HomePage: React.FC<any> = () => {
                             <ProductImage
                                 src="/static/tahke-vaike-2.jpg"
                                 alt="Tahke huulevõie väikses karbis"
+                                width="640"
+                                height="480"
                             />
                             <ProductTitleContainer>
                                 <ProductTitle>

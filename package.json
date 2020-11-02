@@ -8,18 +8,18 @@
         "prettier": "npx prettier --write '{components,pages,styles}/**/*.{js,ts,tsx}'"
     },
     "dependencies": {
-        "next": "^9.2.1",
-        "react": "^16.12.0",
-        "react-dom": "^16.12.0",
+        "next": "10",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
         "react-svg": "^11.0.15",
         "styled-components": "^5.0.1",
         "styled-reset": "^4.1.2"
     },
     "devDependencies": {
-        "@types/node": "^13.1.6",
+        "@types/node": "^14.14.6",
         "@types/react": "^16.9.17",
-        "autoprefixer": "^9.7.3",
+        "autoprefixer": "^10.0.1",
         "prettier": "^2.0.2",
-        "typescript": "^3.7.4"
+        "typescript": "4"
     }
 }
