@@ -8,7 +8,7 @@
         "prettier": "npx prettier --write '{components,pages,styles}/**/*.{js,ts,tsx}'"
     },
     "dependencies": {
-        "next": "10",
+        "next": "11",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-svg": "^11.0.15",
